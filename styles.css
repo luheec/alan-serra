@@ -1,0 +1,69 @@
+/* Noise Texture */
+.bg-noise {
+    position: relative;
+}
+.bg-noise::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Ticker Animation */
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.animate-ticker {
+    animation: ticker 30s linear infinite;
+}
+
+/* Aggressive Clip Paths */
+@media (min-width: 768px) {
+    .md\:clip-diagonal {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+    .md\:clip-diagonal-reverse {
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+/* HEAT & FIRE ANIMATIONS */
+
+/* For Gradient Text */
+@keyframes heat-pulse {
+    0% { filter: drop-shadow(0 0 0 transparent); }
+    50% { filter: drop-shadow(0 -5px 10px rgba(255, 69, 0, 0.4)); }
+    100% { filter: drop-shadow(0 0 0 transparent); }
+}
+.animate-heat-pulse {
+    animation: heat-pulse 3s ease-in-out infinite;
+}
+
+/* For Solid Red Text */
+@keyframes fire-glow {
+    0% { text-shadow: 0 0 10px rgba(204, 0, 0, 0); }
+    50% { text-shadow: 0 -10px 20px rgba(255, 69, 0, 0.6), 0 0 30px rgba(204, 0, 0, 0.4); }
+    100% { text-shadow: 0 0 10px rgba(204, 0, 0, 0); }
+}
+.animate-fire-glow {
+    animation: fire-glow 2s ease-in-out infinite alternate;
+}
+
+/* For White Text */
+@keyframes ember-flicker {
+    0% { text-shadow: 0 0 5px rgba(255, 215, 0, 0); opacity: 1; }
+    25% { text-shadow: 0 -2px 8px rgba(255, 140, 0, 0.5); opacity: 0.95; }
+    50% { text-shadow: 0 -4px 12px rgba(255, 69, 0, 0.3); opacity: 1; }
+    75% { text-shadow: 0 -2px 8px rgba(255, 140, 0, 0.5); opacity: 0.95; }
+    100% { text-shadow: 0 0 5px rgba(255, 215, 0, 0); opacity: 1; }
+}
+.animate-ember {
+    animation: ember-flicker 4s linear infinite;
+}

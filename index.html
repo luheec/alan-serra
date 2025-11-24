@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Serra - Bombeiro de Aço</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Teko:wght@300;400;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons (Versão UMD para garantir funcionamento no navegador) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'fire-red': '#CC0000',
+              'fire-dark': '#8B0000',
+              'fire-yellow': '#FFD700',
+              'soot-black': '#0a0a0a',
+              'carbon': '#1f1f1f',
+              'concrete': '#e5e5e5',
+            },
+            fontFamily: {
+              'stencil': ['"Black Ops One"', 'cursive'],
+              'athletic': ['"Teko"', 'sans-serif'],
+              'body': ['"Roboto"', 'sans-serif'],
+            },
+            backgroundImage: {
+              'caution-stripe': "repeating-linear-gradient(45deg, #FFD700, #FFD700 10px, #0a0a0a 10px, #0a0a0a 20px)",
+            }
+          }
+        }
+      }
+    </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="font-body bg-concrete text-soot-black selection:bg-fire-red selection:text-white overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="bg-soot-black text-white border-b-4 border-fire-red sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 md:py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2 group cursor-pointer">
+                <div class="font-stencil text-2xl md:text-3xl tracking-tighter group-hover:text-fire-red transition-colors">ALAN SERRA</div>
+                <div class="h-6 w-px bg-gray-600 mx-2 hidden sm:block"></div>
+                <div class="font-athletic text-xl text-gray-400 uppercase tracking-widest hidden sm:block">Bombeiro de Aço</div>
+            </div>
+            
+            <a href="https://instagram.com/alansserra" target="_blank" rel="noreferrer" class="bg-white text-soot-black hover:bg-fire-yellow px-4 md:px-6 py-1 md:py-2 font-athletic font-bold text-lg md:text-xl uppercase skew-x-[-10deg] transition-colors shadow-[4px_4px_0px_0px_rgba(255,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 inline-block">
+                <span class="block skew-x-[10deg]">Instagram</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        
+        <!-- HERO SECTION -->
+        <div class="relative min-h-[85vh] md:min-h-[90vh] bg-soot-black overflow-hidden flex flex-col justify-end pb-12 md:pb-20 md:clip-diagonal">
+            <!-- Dynamic Background with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="alan-hero.jpg" alt="Bombeiro Operacional" class="w-full h-full object-cover object-center opacity-80">
+                <!-- Gradient "Heat" Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-soot-black via-soot-black/40 to-transparent mix-blend-multiply"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-soot-black via-transparent to-transparent"></div>
+            </div>
+
+            <!-- Texture Overlay -->
+            <div class="absolute inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-30"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 container mx-auto px-4 md:px-12">
+                <!-- Badge -->
+                <div class="inline-flex items-center border-l-4 border-fire-yellow pl-4 mb-4 md:mb-6 backdrop-blur-sm bg-black/20 pr-4 py-2">
+                    <div>
+                        <p class="text-fire-yellow font-athletic font-bold text-lg md:text-xl tracking-widest leading-none">TEMPORADA 2025/26</p>
+                        <p class="text-white font-body text-xs md:text-sm uppercase tracking-wider opacity-80">Performance & Parceria</p>
+                    </div>
+                </div>
+            
+                <!-- Name Big Typography -->
+                <h1 class="font-stencil font-bold text-white leading-[0.85] select-none">
+                    <span class="block text-[22vw] md:text-[12rem] text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 animate-heat-pulse drop-shadow-2xl">ALAN</span>
+                    <span class="block text-[22vw] md:text-[12rem] text-fire-red ml-2 md:ml-20 -mt-2 md:-mt-12 relative animate-fire-glow drop-shadow-lg">
+                        SERRA
+                        <span class="absolute -top-2 -right-2 md:top-10 md:-right-10 text-sm md:text-3xl text-white bg-fire-red px-2 md:px-4 py-1 font-stencil tracking-widest transform -rotate-12 shadow-lg animate-none border-2 border-white whitespace-nowrap">
+                            CBM-BA
+                        </span>
+                    </span>
+                </h1>
+
+                <!-- Subheadline -->
+                <div class="mt-6 md:mt-8 max-w-2xl border-t border-gray-700 pt-6 md:pt-8 bg-black/60 md:bg-black/40 p-4 md:p-6 backdrop-blur-md rounded-r-lg border-l-4 border-fire-yellow">
+                    <h2 class="text-2xl md:text-5xl font-stencil text-white mb-2 md:mb-4 animate-ember">
+                        BOMBEIRO DE AÇO
+                    </h2>
+                    <p class="text-lg md:text-xl text-gray-200 font-body leading-relaxed max-w-xl">
+                        Disciplina Militar. Performance de Atleta.
+                    </p>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 mt-8 md:mt-10">
+                    <a href="#proposal" class="group w-full sm:w-auto bg-fire-red hover:bg-white hover:text-fire-red text-white font-athletic font-bold text-2xl md:text-3xl py-3 px-6 md:px-12 uppercase skew-x-0 md:skew-x-[-10deg] transition-all duration-300 inline-block text-center shadow-[0_0_20px_rgba(204,0,0,0.5)] hover:shadow-[0_0_40px_rgba(255,255,255,0.5)]">
+                        <span class="block md:skew-x-[10deg] flex items-center justify-center gap-2">
+                        Seja Parceiro <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-12 md:py-24 px-4 md:px-6 bg-concrete relative z-20 overflow-hidden">
+            <div class="hidden md:block absolute top-0 right-0 text-[12rem] font-athletic font-bold text-gray-200 select-none opacity-50 z-0 leading-none -mr-20">
+                PROFILE
+            </div>
+
+            <div class="max-w-6xl mx-auto relative z-10">
+                <div class="flex flex-col lg:flex-row gap-8 md:gap-12 items-start">
+                    
+                    <!-- Image Column -->
+                    <div class="w-full lg:w-5/12 relative mt-4 md:mt-8 px-2 md:px-0">
+                        <div class="relative z-10 border-4 border-black p-2 bg-white transform -rotate-2 md:-rotate-3 hover:rotate-0 transition-transform duration-500 shadow-2xl mx-auto max-w-sm lg:max-w-none">
+                            <img src="alan-profile.jpg" alt="Alan Serra Profile" class="w-full h-auto object-cover grayscale contrast-125">
+                            <div class="absolute -bottom-4 -right-2 md:-bottom-6 md:-right-6 bg-fire-red text-white font-stencil text-sm md:text-xl px-4 md:px-6 py-2 md:py-3 border-2 border-black transform rotate-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                                CBM-BA // 2025
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-6 w-full h-full border-4 border-fire-yellow z-0 transform translate-x-0 translate-y-0 hidden md:block"></div>
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="w-full lg:w-7/12 mt-8 md:mt-0">
+                        <div class="mb-6 md:mb-8">
+                            <h2 class="text-5xl md:text-8xl font-athletic font-bold uppercase leading-[0.85] text-soot-black mb-4">
+                                Perfil <span class="text-fire-red">Atleta</span>
+                            </h2>
+                            <div class="w-16 md:w-24 h-3 md:h-4 bg-black mb-4 md:mb-6"></div>
+                        </div>
+                        
+                        <p class="text-xl md:text-3xl text-soot-black font-body font-medium leading-snug mb-6">
+                            Sou Alan Serra, atleta do <span class="bg-fire-red text-white px-2 box-decoration-clone shadow-md">Corpo de Bombeiros Militar da Bahia</span> e competidor de elite no Firefighter Challenge.
+                        </p>
+                        
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed border-l-4 border-fire-yellow pl-4 md:pl-6 mb-8 md:mb-12">
+                            Minha trajetória é marcada por disciplina, performance real e evolução constante. Não é apenas sobre competir, é sobre representar a força e a técnica de uma instituição e inspirar pessoas a superarem seus próprios limites.
+                        </p>
+
+                        <!-- Three Pillars -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                            <!-- Card 1 -->
+                            <div class="bg-white p-5 md:p-6 border-l-4 border-fire-red shadow-lg">
+                                <i data-lucide="target" class="w-8 h-8 md:w-10 md:h-10 text-fire-red mb-3 md:mb-4"></i>
+                                <h4 class="font-athletic font-bold text-xl md:text-2xl uppercase mb-2">Performance</h4>
+                                <p class="text-gray-600 font-body text-sm leading-relaxed">
+                                    Resultados consistentes em competições estaduais, nacionais e internacionais, com foco total em superação de índices técnicos.
+                                </p>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="bg-white p-5 md:p-6 border-l-4 border-fire-red shadow-lg">
+                                <i data-lucide="shield-check" class="w-8 h-8 md:w-10 md:h-10 text-fire-red mb-3 md:mb-4"></i>
+                                <h4 class="font-athletic font-bold text-xl md:text-2xl uppercase mb-2">Credibilidade</h4>
+                                <p class="text-gray-600 font-body text-sm leading-relaxed">
+                                    A imagem institucional aliada ao esporte. Valores de honra, disciplina e serviço público atrelados à sua marca.
+                                </p>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="bg-white p-5 md:p-6 border-l-4 border-fire-red shadow-lg">
+                                <i data-lucide="users" class="w-8 h-8 md:w-10 md:h-10 text-fire-red mb-3 md:mb-4"></i>
+                                <h4 class="font-athletic font-bold text-xl md:text-2xl uppercase mb-2">Conexão</h4>
+                                <p class="text-gray-600 font-body text-sm leading-relaxed">
+                                    Engajamento real com um público que valoriza saúde, segurança e estilo de vida ativo e resiliente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCHEDULE SECTION -->
+        <section id="achievements" class="py-12 md:py-24 bg-soot-black relative bg-noise md:clip-diagonal-reverse -mt-0 md:-mt-20 pt-12 md:pt-32">
+            <!-- Vertical Line Decoration -->
+            <div class="absolute left-4 md:left-8 top-0 bottom-0 w-1 bg-gray-800 hidden md:block"></div>
+      
+            <div class="container mx-auto px-4 md:px-12 relative z-10">
+              
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-16 border-b-2 border-gray-800 pb-6">
+                    <div>
+                        <h2 class="text-5xl md:text-8xl font-athletic font-bold text-white uppercase leading-none">
+                            Resultados
+                        </h2>
+                        <h3 class="text-fire-red font-stencil text-xl md:text-3xl uppercase tracking-widest mt-2 md:mt-0">
+                            Operações & Conquistas
+                        </h3>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <p class="text-left md:text-right text-gray-400 font-mono text-xs md:text-sm">
+                            STATUS: ATIVO<br/>
+                            CLASSIFICAÇÃO: ELITE
+                        </p>
+                    </div>
+                </div>
+      
+                <!-- Grid Layout (Static Content) -->
+                <div class="grid grid-cols-1 gap-3 md:gap-4">
+                    <!-- Game 1 -->
+                    <div class="group relative bg-carbon hover:bg-gray-900 transition-all duration-300 border-l-8 border-transparent hover:border-fire-yellow overflow-hidden">
+                        <div class="absolute right-0 top-0 text-6xl md:text-8xl font-athletic font-bold text-white opacity-5 group-hover:opacity-10 leading-none -mt-1 md:-mt-2 -mr-2 md:-mr-4 select-none">26</div>
+                        <div class="p-5 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-6">
+                            <div class="flex-grow w-full">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span class="bg-fire-red text-white text-[10px] md:text-xs font-bold px-2 py-1 uppercase tracking-widest">Internacional</span>
+                                    <span class="text-fire-yellow font-mono text-xs md:text-sm">2026</span>
+                                </div>
+                                <h3 class="text-2xl md:text-4xl font-athletic font-bold text-white uppercase tracking-wide group-hover:translate-x-2 transition-transform truncate w-full">Mundial - Flórida</h3>
+                                <div class="flex items-center gap-4 mt-2 text-gray-400">
+                                    <span class="flex items-center gap-1 text-xs md:text-sm font-body uppercase"><i data-lucide="map-pin" class="w-3 h-3 md:w-4 md:h-4"></i> Flórida, EUA</span>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-auto flex md:flex-col items-center justify-between md:justify-center gap-4 border-t border-gray-800 md:border-t-0 md:border-l md:pl-8 pt-3 md:pt-0">
+                                <div class="text-left md:text-right">
+                                    <span class="block text-[10px] md:text-xs text-gray-500 uppercase font-bold mb-1">Status</span>
+                                    <span class="text-xl md:text-2xl font-stencil uppercase text-white">Classificado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game 2 -->
+                    <div class="group relative bg-carbon hover:bg-gray-900 transition-all duration-300 border-l-8 border-transparent hover:border-fire-yellow overflow-hidden">
+                        <div class="absolute right-0 top-0 text-6xl md:text-8xl font-athletic font-bold text-white opacity-5 group-hover:opacity-10 leading-none -mt-1 md:-mt-2 -mr-2 md:-mr-4 select-none">26</div>
+                        <div class="p-5 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-6">
+                            <div class="flex-grow w-full">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span class="bg-fire-red text-white text-[10px] md:text-xs font-bold px-2 py-1 uppercase tracking-widest">Internacional</span>
+                                    <span class="text-fire-yellow font-mono text-xs md:text-sm">2026</span>
+                                </div>
+                                <h3 class="text-2xl md:text-4xl font-athletic font-bold text-white uppercase tracking-wide group-hover:translate-x-2 transition-transform truncate w-full">Mundial - Arábia Saudita</h3>
+                                <div class="flex items-center gap-4 mt-2 text-gray-400">
+                                    <span class="flex items-center gap-1 text-xs md:text-sm font-body uppercase"><i data-lucide="map-pin" class="w-3 h-3 md:w-4 md:h-4"></i> Arábia Saudita</span>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-auto flex md:flex-col items-center justify-between md:justify-center gap-4 border-t border-gray-800 md:border-t-0 md:border-l md:pl-8 pt-3 md:pt-0">
+                                <div class="text-left md:text-right">
+                                    <span class="block text-[10px] md:text-xs text-gray-500 uppercase font-bold mb-1">Status</span>
+                                    <span class="text-xl md:text-2xl font-stencil uppercase text-white">Classificado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game 3 -->
+                    <div class="group relative bg-carbon hover:bg-gray-900 transition-all duration-300 border-l-8 border-transparent hover:border-fire-yellow overflow-hidden">
+                        <div class="absolute right-0 top-0 text-6xl md:text-8xl font-athletic font-bold text-white opacity-5 group-hover:opacity-10 leading-none -mt-1 md:-mt-2 -mr-2 md:-mr-4 select-none">25</div>
+                        <div class="p-5 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-6">
+                            <div class="flex-grow w-full">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span class="bg-gray-700 text-white text-[10px] md:text-xs font-bold px-2 py-1 uppercase tracking-widest">Nacional</span>
+                                    <span class="text-fire-yellow font-mono text-xs md:text-sm">2025</span>
+                                </div>
+                                <h3 class="text-2xl md:text-4xl font-athletic font-bold text-white uppercase tracking-wide group-hover:translate-x-2 transition-transform truncate w-full">Estadual Bahia</h3>
+                                <div class="flex items-center gap-4 mt-2 text-gray-400">
+                                    <span class="flex items-center gap-1 text-xs md:text-sm font-body uppercase"><i data-lucide="map-pin" class="w-3 h-3 md:w-4 md:h-4"></i> Bahia, BR</span>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-auto flex md:flex-col items-center justify-between md:justify-center gap-4 border-t border-gray-800 md:border-t-0 md:border-l md:pl-8 pt-3 md:pt-0">
+                                <div class="text-left md:text-right">
+                                    <span class="block text-[10px] md:text-xs text-gray-500 uppercase font-bold mb-1">Status</span>
+                                    <span class="text-xl md:text-2xl font-stencil uppercase text-fire-yellow">CAMPEÃO</span>
+                                </div>
+                                <i data-lucide="trophy" class="w-6 h-6 md:w-8 md:h-8 text-fire-yellow hidden md:block"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game 4 -->
+                    <div class="group relative bg-carbon hover:bg-gray-900 transition-all duration-300 border-l-8 border-transparent hover:border-fire-yellow overflow-hidden">
+                        <div class="absolute right-0 top-0 text-6xl md:text-8xl font-athletic font-bold text-white opacity-5 group-hover:opacity-10 leading-none -mt-1 md:-mt-2 -mr-2 md:-mr-4 select-none">25</div>
+                        <div class="p-5 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-6">
+                            <div class="flex-grow w-full">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span class="bg-gray-700 text-white text-[10px] md:text-xs font-bold px-2 py-1 uppercase tracking-widest">Nacional</span>
+                                    <span class="text-fire-yellow font-mono text-xs md:text-sm">2025</span>
+                                </div>
+                                <h3 class="text-2xl md:text-4xl font-athletic font-bold text-white uppercase tracking-wide group-hover:translate-x-2 transition-transform truncate w-full">Desafio Rio</h3>
+                                <div class="flex items-center gap-4 mt-2 text-gray-400">
+                                    <span class="flex items-center gap-1 text-xs md:text-sm font-body uppercase"><i data-lucide="map-pin" class="w-3 h-3 md:w-4 md:h-4"></i> Rio de Janeiro, BR</span>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-auto flex md:flex-col items-center justify-between md:justify-center gap-4 border-t border-gray-800 md:border-t-0 md:border-l md:pl-8 pt-3 md:pt-0">
+                                <div class="text-left md:text-right">
+                                    <span class="block text-[10px] md:text-xs text-gray-500 uppercase font-bold mb-1">Status</span>
+                                    <span class="text-xl md:text-2xl font-stencil uppercase text-fire-yellow">CAMPEÃO</span>
+                                </div>
+                                <i data-lucide="trophy" class="w-6 h-6 md:w-8 md:h-8 text-fire-yellow hidden md:block"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Game 5 -->
+                    <div class="group relative bg-carbon hover:bg-gray-900 transition-all duration-300 border-l-8 border-transparent hover:border-fire-yellow overflow-hidden">
+                        <div class="absolute right-0 top-0 text-6xl md:text-8xl font-athletic font-bold text-white opacity-5 group-hover:opacity-10 leading-none -mt-1 md:-mt-2 -mr-2 md:-mr-4 select-none">25</div>
+                        <div class="p-5 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-6">
+                            <div class="flex-grow w-full">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span class="bg-gray-700 text-white text-[10px] md:text-xs font-bold px-2 py-1 uppercase tracking-widest">Nacional</span>
+                                    <span class="text-fire-yellow font-mono text-xs md:text-sm">2025</span>
+                                </div>
+                                <h3 class="text-2xl md:text-4xl font-athletic font-bold text-white uppercase tracking-wide group-hover:translate-x-2 transition-transform truncate w-full">Desafio Paraíba</h3>
+                                <div class="flex items-center gap-4 mt-2 text-gray-400">
+                                    <span class="flex items-center gap-1 text-xs md:text-sm font-body uppercase"><i data-lucide="map-pin" class="w-3 h-3 md:w-4 md:h-4"></i> Paraíba, BR</span>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-auto flex md:flex-col items-center justify-between md:justify-center gap-4 border-t border-gray-800 md:border-t-0 md:border-l md:pl-8 pt-3 md:pt-0">
+                                <div class="text-left md:text-right">
+                                    <span class="block text-[10px] md:text-xs text-gray-500 uppercase font-bold mb-1">Status</span>
+                                    <span class="text-xl md:text-2xl font-stencil uppercase text-fire-yellow">CAMPEÃO</span>
+                                </div>
+                                <i data-lucide="trophy" class="w-6 h-6 md:w-8 md:h-8 text-fire-yellow hidden md:block"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game 6 -->
+                    <div class="group relative bg-carbon hover:bg-gray-900 transition-all duration-300 border-l-8 border-transparent hover:border-fire-yellow overflow-hidden">
+                        <div class="absolute right-0 top-0 text-6xl md:text-8xl font-athletic font-bold text-white opacity-5 group-hover:opacity-10 leading-none -mt-1 md:-mt-2 -mr-2 md:-mr-4 select-none">25</div>
+                        <div class="p-5 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-6">
+                            <div class="flex-grow w-full">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <span class="bg-gray-700 text-white text-[10px] md:text-xs font-bold px-2 py-1 uppercase tracking-widest">Nacional</span>
+                                    <span class="text-fire-yellow font-mono text-xs md:text-sm">2025</span>
+                                </div>
+                                <h3 class="text-2xl md:text-4xl font-athletic font-bold text-white uppercase tracking-wide group-hover:translate-x-2 transition-transform truncate w-full">Circuito Nacional</h3>
+                                <div class="flex items-center gap-4 mt-2 text-gray-400">
+                                    <span class="flex items-center gap-1 text-xs md:text-sm font-body uppercase"><i data-lucide="map-pin" class="w-3 h-3 md:w-4 md:h-4"></i> Vários Estados</span>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-auto flex md:flex-col items-center justify-between md:justify-center gap-4 border-t border-gray-800 md:border-t-0 md:border-l md:pl-8 pt-3 md:pt-0">
+                                <div class="text-left md:text-right">
+                                    <span class="block text-[10px] md:text-xs text-gray-500 uppercase font-bold mb-1">Status</span>
+                                    <span class="text-xl md:text-2xl font-stencil uppercase text-white">Pódios Frequentes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROPOSAL SECTION -->
+        <section id="proposal" class="relative">
+            <div class="flex flex-col lg:flex-row">
+                <!-- Left: Context (Red) -->
+                <div class="w-full lg:w-1/2 bg-fire-red text-white p-6 md:p-24 flex flex-col justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagonal-noise.png')] opacity-20"></div>
+                    <div class="relative z-10 py-8 md:py-0">
+                        <h2 class="text-4xl md:text-6xl font-athletic font-bold uppercase mb-4 md:mb-8 leading-none">
+                            O Momento<br/>é Agora
+                        </h2>
+                        <p class="text-lg md:text-xl font-medium mb-6 md:mb-8 max-w-md">
+                            Estou entrando na fase mais importante da carreira: <span class="bg-black px-1">dois mundiais e uma temporada nacional intensa.</span>
+                        </p>
+                        <p class="text-lg md:text-xl font-medium mb-6 md:mb-8 max-w-md">
+                            Procuro marca que valorize performance real e visibilidade. Existe um encaixe perfeito entre nós.
+                        </p>
+
+                        <div class="bg-black/20 p-6 md:p-8 border border-white/30 backdrop-blur-sm shadow-xl">
+                            <h4 class="font-stencil text-xl md:text-2xl mb-4 md:mb-6 uppercase">Onde eu represento você:</h4>
+                            <ul class="space-y-3 md:space-y-4 font-bold text-base md:text-lg">
+                                <li class="flex items-center gap-3"><i data-lucide="check-square" class="w-5 h-5 md:w-6 md:h-6 text-fire-yellow flex-shrink-0"></i> Competições Mundiais</li>
+                                <li class="flex items-center gap-3"><i data-lucide="check-square" class="w-5 h-5 md:w-6 md:h-6 text-fire-yellow flex-shrink-0"></i> Entrevistas & TV</li>
+                                <li class="flex items-center gap-3"><i data-lucide="check-square" class="w-5 h-5 md:w-6 md:h-6 text-fire-yellow flex-shrink-0"></i> Conteúdo Digital</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: The Deal (White/Black) -->
+                <div class="w-full lg:w-1/2 bg-white p-6 md:p-24 flex flex-col justify-center relative">
+                    <div class="absolute top-0 right-0 w-16 h-16 md:w-24 md:h-24 bg-fire-yellow/20"></div>
+
+                    <div class="mb-8 md:mb-12 py-8 md:py-0">
+                        <h3 class="text-3xl md:text-4xl font-athletic font-bold text-soot-black uppercase mb-4 md:mb-6 flex items-center gap-3">
+                            <span class="bg-soot-black text-white p-2 rounded"><i data-lucide="flame" class="w-5 h-5 md:w-6 md:h-6"></i></span>
+                            O que eu ofereço
+                        </h3>
+                        <ul class="space-y-3 md:space-y-4 text-base md:text-lg text-gray-700 border-l-4 border-soot-black pl-4 md:pl-6">
+                            <li><strong>Exposição contínua</strong> em treinos e pódios.</li>
+                            <li>Uso da marca em <strong>EPI e uniformes oficiais</strong>.</li>
+                            <li>Menção da parceria em <strong>entrevistas e aparições públicas</strong>, quando apropriado.</li>
+                            <li><strong>Depoimentos reais</strong> sobre performance.</li>
+                        </ul>
+                    </div>
+
+                    <div class="border-t-4 border-dashed border-gray-300 pt-8 md:pt-12">
+                        <h3 class="text-3xl md:text-4xl font-athletic font-bold text-soot-black uppercase mb-4 md:mb-6 flex items-center gap-3">
+                            <span class="bg-soot-black text-white p-2 rounded"><i data-lucide="briefcase" class="w-5 h-5 md:w-6 md:h-6"></i></span>
+                            O que busco
+                        </h3>
+                        <p class="text-gray-600 mb-4 font-bold uppercase tracking-widest text-xs md:text-sm">Parceria flexível:</p>
+                        <div class="flex flex-col gap-4">
+                            <div class="bg-gray-100 p-4 border-l-4 border-fire-red hover:bg-white hover:shadow-md transition-all">
+                                <p class="font-bold text-soot-black text-sm md:text-base">Suporte para preparação de alto rendimento</p>
+                            </div>
+                            <div class="bg-gray-100 p-4 border-l-4 border-fire-red hover:bg-white hover:shadow-md transition-all">
+                                <p class="font-bold text-soot-black text-sm md:text-base">Apoio nas despesas dos Mundiais (EUA/Arábia Saudita)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AUDIENCE SECTION -->
+        <section class="py-12 md:py-24 px-4 md:px-6 bg-soot-black relative z-10 border-t-8 border-fire-yellow">
+             <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-30 pointer-events-none"></div>
+             
+             <div class="container mx-auto max-w-6xl relative z-10">
+                <div class="text-center mb-10 md:mb-16">
+                    <span class="bg-fire-yellow text-black font-bold px-3 py-1 uppercase tracking-widest text-xs mb-4 inline-block">Demografia & Alcance</span>
+                    <h2 class="text-4xl md:text-7xl font-athletic font-bold text-white uppercase mb-4">Meu Público</h2>
+                    <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">Engajado, Relevante e Alinhado com Marcas de Performance</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                    
+                    <!-- Column 1 -->
+                    <div class="bg-gray-900/50 border border-gray-800 p-6 md:p-8 rounded-sm backdrop-blur-sm">
+                        <h3 class="text-xl md:text-2xl font-stencil text-white mb-6 md:mb-8 border-b border-gray-700 pb-4">
+                            Base de Seguidores
+                        </h3>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <div class="bg-fire-red/20 p-2 rounded">
+                                    <i data-lucide="shield-check" class="w-5 h-5 md:w-6 md:h-6 text-fire-red"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-base md:text-lg uppercase">Segurança & Forças Públicas</h4>
+                                    <p class="text-gray-400 text-sm">Profissionais de segurança, saúde e militares.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="bg-fire-red/20 p-2 rounded">
+                                    <i data-lucide="activity" class="w-5 h-5 md:w-6 md:h-6 text-fire-red"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-base md:text-lg uppercase">Atletas & Crossfit</h4>
+                                    <p class="text-gray-400 text-sm">Praticantes de funcional e alta intensidade.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="bg-fire-red/20 p-2 rounded">
+                                    <i data-lucide="zap" class="w-5 h-5 md:w-6 md:h-6 text-fire-red"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-base md:text-lg uppercase">Performance & Rotina</h4>
+                                    <p class="text-gray-400 text-sm">Jovens adultos focados em condicionamento e superação.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="relative">
+                        <div class="absolute -top-10 -right-10 w-32 h-32 bg-fire-yellow opacity-10 rounded-full blur-3xl"></div>
+                        
+                        <h3 class="text-2xl md:text-3xl font-athletic text-white uppercase mb-6 md:mb-8 leading-tight">
+                            Essa é uma base extremamente engajada e alinhada com marcas de:
+                        </h3>
+
+                        <div class="flex flex-wrap gap-2 md:gap-3">
+                            <span class="bg-white text-black font-bold font-athletic text-lg md:text-2xl px-4 md:px-6 py-1 md:py-2 uppercase transform hover:-translate-y-1 transition-transform cursor-default border-b-4 border-gray-300">Saúde</span>
+                            <span class="bg-white text-black font-bold font-athletic text-lg md:text-2xl px-4 md:px-6 py-1 md:py-2 uppercase transform hover:-translate-y-1 transition-transform cursor-default border-b-4 border-gray-300">Performance</span>
+                            <span class="bg-white text-black font-bold font-athletic text-lg md:text-2xl px-4 md:px-6 py-1 md:py-2 uppercase transform hover:-translate-y-1 transition-transform cursor-default border-b-4 border-gray-300">Serviços Premium</span>
+                            <span class="bg-white text-black font-bold font-athletic text-lg md:text-2xl px-4 md:px-6 py-1 md:py-2 uppercase transform hover:-translate-y-1 transition-transform cursor-default border-b-4 border-gray-300">Suplementos</span>
+                            <span class="bg-white text-black font-bold font-athletic text-lg md:text-2xl px-4 md:px-6 py-1 md:py-2 uppercase transform hover:-translate-y-1 transition-transform cursor-default border-b-4 border-gray-300">Lifestyle</span>
+                        </div>
+
+                        <div class="mt-8 md:mt-12 p-4 md:p-6 border-l-4 border-fire-yellow bg-white/5">
+                            <p class="text-gray-300 italic font-body text-sm md:text-base">
+                                "Meu público busca inspiração em resultados reais. Eles não querem apenas ver, querem replicar o mindset de disciplina."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+        <section id="media" class="py-12 md:py-24 bg-carbon relative border-t-8 border-fire-red">
+            <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+      
+            <div class="container mx-auto px-4 md:px-8 relative z-10">
+              
+                <!-- Header -->
+                <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-8 md:mb-12 border-b-4 border-white pb-4">
+                    <div>
+                        <span class="bg-fire-red text-white px-3 py-1 font-bold uppercase tracking-widest text-xs mb-2 inline-block">
+                            Melhores Momentos
+                        </span>
+                        <h2 class="text-5xl md:text-8xl font-athletic font-bold text-white uppercase leading-[0.85]">
+                            Galeria<span class="text-outline-white text-transparent ml-2"></span>
+                        </h2>
+                    </div>
+                    <div class="text-left md:text-right mt-4 md:mt-0">
+                        <p class="text-gray-400 font-mono text-xs md:text-sm uppercase">
+                            Atualizado: Temporada 2025<br/>
+                            Conteúdo Oficial
+                        </p>
+                    </div>
+                </div>
+      
+                <!-- Videos -->
+                <div class="mb-12 md:mb-16">
+                    <div class="flex items-center gap-2 mb-4 md:mb-6 text-white">
+                        <i data-lucide="film" class="w-5 h-5 md:w-6 md:h-6 text-fire-yellow"></i>
+                        <h3 class="font-stencil text-xl md:text-2xl uppercase tracking-wide">Entrevistas & Ação</h3>
+                    </div>
+      
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                        <!-- Video 1 -->
+                        <div class="group relative aspect-video bg-black border-2 border-gray-800 overflow-hidden cursor-pointer">
+                            <img src="https://images.unsplash.com/photo-1574852859542-1b41217a7815?q=80&w=1000&auto=format&fit=crop" alt="Entrevista TV" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-16 h-16 md:w-20 md:h-20 bg-fire-red/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-[0_0_30px_rgba(204,0,0,0.6)]">
+                                    <i data-lucide="play" class="w-6 h-6 md:w-8 md:h-8 text-white fill-white ml-1"></i>
+                                </div>
+                            </div>
+                            <div class="absolute top-4 left-4 bg-red-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 animate-pulse border border-white">
+                                AO VIVO / REC
+                            </div>
+                            <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4 md:p-6">
+                                <p class="text-fire-yellow font-mono text-[10px] md:text-xs mb-1">TV BAHIA / RECORD</p>
+                                <h4 class="text-white font-athletic text-2xl md:text-3xl uppercase leading-none">Entrevista: Preparação Mundial</h4>
+                            </div>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="group relative aspect-video bg-black border-2 border-gray-800 overflow-hidden cursor-pointer">
+                            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1000&auto=format&fit=crop" alt="Treinamento Funcional" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-16 h-16 md:w-20 md:h-20 bg-transparent border-4 border-white rounded-full flex items-center justify-center group-hover:bg-white/10 transition-all">
+                                    <i data-lucide="play" class="w-6 h-6 md:w-8 md:h-8 text-white ml-1"></i>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4 md:p-6">
+                                <p class="text-fire-yellow font-mono text-[10px] md:text-xs mb-1">BASTIDORES</p>
+                                <h4 class="text-white font-athletic text-2xl md:text-3xl uppercase leading-none">Treino de Explosão - CBMBA</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      
+                <!-- Photos -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4 md:mb-6 text-white">
+                        <i data-lucide="camera" class="w-5 h-5 md:w-6 md:h-6 text-fire-yellow"></i>
+                        <h3 class="font-stencil text-xl md:text-2xl uppercase tracking-wide">Galeria Oficial</h3>
+                    </div>
+      
+                    <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-none md:grid-rows-2 gap-4 h-auto md:h-[800px]">
+                        
+                        <!-- Main Flex Image -->
+                        <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden border-2 border-white/10 bg-gray-900 aspect-square md:aspect-auto">
+                            <img src="alan-flex.jpg" alt="Alan Serra Flexing with Trophy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out transform group-hover:scale-105">
+                            <div class="absolute top-0 right-0 p-4">
+                                 <div class="w-12 h-12 md:w-16 md:h-16 bg-fire-yellow rounded-full flex items-center justify-center font-bold text-black border-4 border-black transform rotate-12 shadow-lg">
+                                    #1
+                                 </div>
+                            </div>
+                            <div class="absolute bottom-0 left-0 p-6 md:p-8 bg-gradient-to-t from-black via-black/80 to-transparent w-full translate-y-4 group-hover:translate-y-0 transition-transform">
+                                <div class="bg-fire-red w-12 h-2 mb-2 md:mb-4"></div>
+                                <h4 class="text-white font-athletic text-4xl md:text-6xl uppercase leading-none drop-shadow-lg">Campeão Geral</h4>
+                                <p class="text-gray-300 font-body text-xs md:text-sm mt-2 border-l-2 border-fire-yellow pl-3">1º Lugar - Bombeiro de Aço 2025</p>
+                            </div>
+                        </div>
+      
+                        <!-- Photo 2 -->
+                        <div class="relative group overflow-hidden border-2 border-white/10 bg-gray-800 aspect-square md:aspect-auto">
+                             <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop" alt="Placeholder Training" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                             <div class="absolute inset-0 bg-fire-red/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        </div>
+      
+                        <!-- Photo 3 -->
+                        <div class="relative group overflow-hidden border-2 border-white/10 bg-gray-800 aspect-square md:aspect-auto">
+                             <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop" alt="Placeholder Weights" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                            <div class="absolute top-2 right-2 bg-black/80 text-white text-[10px] md:text-xs px-2 py-1 font-mono border border-gray-600">
+                                2025
+                            </div>
+                        </div>
+      
+                        <!-- Wide Photo -->
+                        <div class="md:col-span-2 relative group overflow-hidden border-2 border-white/10 bg-gray-800 aspect-video md:aspect-auto">
+                             <div class="absolute inset-0 flex items-center justify-center z-10">
+                                <p class="text-gray-600 font-athletic text-2xl md:text-4xl uppercase tracking-widest group-hover:text-fire-yellow transition-colors text-center px-4">Espaço para Patrocinador</p>
+                             </div>
+                             <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagonal-noise.png')] opacity-10 z-0"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 md:mt-8 flex justify-between items-center border-t border-gray-800 pt-4">
+                     <p class="text-gray-500 text-[10px] md:text-xs font-mono uppercase">Imagens de uso autorizado para imprensa</p>
+                     <button class="flex items-center gap-2 text-fire-red hover:text-white font-bold uppercase transition-colors text-xs md:text-sm tracking-widest group">
+                        Ver Arquivo <i data-lucide="maximize-2" class="w-3 h-3 md:w-4 md:h-4 group-hover:scale-125 transition-transform"></i>
+                     </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-soot-black text-white border-t-[16px] border-fire-yellow relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+           <img src="alan-helmet.jpg" alt="Background Helmet" class="w-full h-full object-cover opacity-10 grayscale contrast-125">
+           <div class="absolute inset-0 bg-soot-black/80"></div>
+        </div>
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 pointer-events-none z-0"></div>
+        
+        <div class="container mx-auto px-6 py-12 md:py-20 relative z-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12 md:mb-16">
+            
+            <div class="lg:col-span-2">
+              <h2 class="text-5xl md:text-7xl font-stencil text-white mb-4 uppercase leading-none tracking-tight">
+                Alan Serra
+              </h2>
+              <div class="w-24 h-2 bg-fire-red mb-6 md:mb-8"></div>
+              <p class="text-lg md:text-xl text-gray-400 font-body leading-relaxed max-w-md">
+                Atleta de elite do CBM-BA. Levando a força do bombeiro brasileiro para o cenário mundial. Pronto para elevar sua marca.
+              </p>
+            </div>
+            
+            <div>
+              <h4 class="text-fire-yellow font-stencil text-lg md:text-xl mb-4 md:mb-6 uppercase tracking-wider">Competições</h4>
+              <ul class="space-y-3 md:space-y-4 font-bold text-white font-athletic text-xl md:text-2xl tracking-wide">
+                <li class="hover:text-fire-red transition-colors">
+                   <a href="https://www.wfg26.com/" target="_blank" rel="noreferrer" class="flex items-center gap-2">
+                      >> World Games 2026
+                   </a>
+                </li>
+                <li class="hover:text-fire-red transition-colors">
+                   <a href="https://www.instagram.com/firefighterchallenge" target="_blank" rel="noreferrer" class="flex items-center gap-2">
+                      >> Mundial Challenge
+                   </a>
+                </li>
+              </ul>
+            </div>
+  
+            <div>
+               <h4 class="text-fire-yellow font-stencil text-lg md:text-xl mb-4 md:mb-6 uppercase tracking-wider">Contato Direto</h4>
+               
+               <div class="space-y-4 md:space-y-6">
+                  <a href="https://instagram.com/alansserra" target="_blank" rel="noreferrer" class="flex items-center gap-4 group">
+                      <div class="w-10 h-10 md:w-12 md:h-12 bg-fire-red flex items-center justify-center text-white font-bold transform group-hover:rotate-12 transition-transform shadow-lg border-2 border-transparent group-hover:border-white">
+                          <!-- SVG Instagram oficial inline -->
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 md:w-6 md:h-6"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                      </div>
+                      <div>
+                          <span class="block text-xs text-gray-500 uppercase font-bold">Instagram</span>
+                          <span class="font-athletic text-xl md:text-2xl uppercase text-white group-hover:text-fire-yellow transition-colors">@alansserra</span>
+                      </div>
+                  </a>
+  
+                  <a href="https://wa.me/5571986981456" target="_blank" rel="noreferrer" class="flex items-center gap-4 group">
+                      <div class="w-10 h-10 md:w-12 md:h-12 bg-green-600 flex items-center justify-center text-white font-bold transform group-hover:rotate-12 transition-transform shadow-lg border-2 border-transparent group-hover:border-white">
+                          <!-- SVG WhatsApp oficial inline (Phone icon adaptado para WhatsApp style) -->
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 md:w-6 md:h-6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                      </div>
+                      <div>
+                          <span class="block text-xs text-gray-500 uppercase font-bold">WhatsApp</span>
+                          <span class="font-athletic text-xl md:text-2xl uppercase text-white group-hover:text-green-400 transition-colors">71.98698-1456</span>
+                      </div>
+                  </a>
+               </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Init Icons -->
+    <script src="script.js"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
